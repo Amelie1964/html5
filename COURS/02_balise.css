@@ -1,0 +1,38 @@
+.pink{
+    background-color: hotpink;}
+
+article{background-color: green;}
+
+footer{background-color: red;color: #fff;margin: 10px 50px 2px 40px;/*margin permet de faire des espacements entre les elements, principalement il contient 4 chiffres qui evolue dans le sens horaire : top right bottom left*/
+    padding: 250px;
+width: 500px;
+height: 200px;
+text-align: center;
+clear: both;}
+
+#article{background-color: lawngreen;
+width: 500px;
+height: 300px;
+float: left;}
+
+a{
+    font-size: 26px;/*permet de changer la taille de la police*/
+    margin-left: 10px;/*permet de creer un espace de 10 pixels entre Lien1, Lien2 et Lien3.*/
+    color: lightblue;/*pour modifier la couleur du texte*/
+    text-decoration: none;/*pour supprimer l'erichissement du texte : ici, on supprime le soulignage sur les mots Lien1, Lien2 et Lien3*/
+}
+
+nav{
+    text-align: right;/*en utilisant text-align dans nav, on decale tout le bloc de texte contenu dans nav vers la droite*/
+    font-family: fantasy;/*changement de la police de caractere*/
+}
+
+body{
+    /*ici on va centrer toute la page web*/
+    width: 1300px;/*largeur de la page web*/
+    text-align: center;
+    margin: 0 auto;/*permet de centrer le contenu de la page et il va creer un margin automatique (gauche et droite) et en haut et en bas le margin sera 0*/
+    background-color: lightsalmon;/*le fond de page web est configure couleur saumon*/
+}
+
+

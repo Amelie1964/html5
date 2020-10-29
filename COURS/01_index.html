@@ -1,0 +1,84 @@
+<!DOCTYPE html><!--DOCTYPE est la premiere balise obligatoire dans une page html, elle designe le type de document pour un navigateur-->
+<html lang="fr"><!--la balise pour definir la langue du document qu'on va utiliser, ici on peut mettre "en pour anglais-->
+<head>
+    <!-- la balise head designe l'entete de la page, il contient les parametres de cette page, c'est une partie invisible sur la page webh, ça sert juste pour configurer-->
+    <meta charset="UTF-8"><!--definir le type de codage de la page, permet l'encodage et l'affichage de caracteres speciaux-->
+    <!--balise meta="viewport" permet de contrôler l'affichage pour les versions mobiles, ici "initial-scale=1.0" signifie qu'il n'y a pas de zoom sur la fenêtre-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="ici on met la description de la page qui ne doit pas depasser 255 caracteres espaces compris">
+    <title>index 01</title><!--c'est le titre de la page, contient au maximum 65 caracteres espaces y compris-->
+    <meta name="author"content=Amelie><!--l'auteur du site-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h1>Formation Vitry</h1>
+   <!--pour les titres, on a 6 niveaux de h1 à h6-->
+
+   <h2>Formation Vitry</h2>
+   <h3>Formation Vitry</h3>
+   <h4>Formation Vitry</h4>
+   <h5>Formation Vitry</h5>
+   <h6>Formation Vitry</h6>
+
+   <!--<br> est une balise qui permet le retour à la ligne à la fin de la phrase ecrite dans un paragraphe-->
+
+   <!--la balise span permet d'afficher du texte comme la balise p mais elle est de type inline, c'est a dire qu'elle ne s'occupe que du contour et non pas de la totalite de la ligne-->
+
+   <p style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, velit <strong>animatur</strong> reprehenderit porro minima beatae magnam. <br>Deleniti iusto, illum voluptas repellat dolore, delectus <mark>absolutem</mark> magni beatae laboriosam a, libero ducimus sint quaerat.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ea, ipsam harum reprehenderit reiciendis inventore commodi. Laboriosam, in quas. Debitis, maxime! Accusantium, doloribus quas praesentium enim iusto debitis dignissimos sunt.</p>
+
+   <p>Cette phrase est creee pour voir l'effet des modifications realisees a partir du fichier style.css</p>
+
+   <p style="background-color: blueviolet;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quis voluptates consequuntur qui, perferendis molestias distinctio eos dolores at et obcaecati. Voluptatibus molestiae adipisci debitis incidunt consectetur saepe officia iure.</p>
+
+   <span style="background-color: aquamarine;"> Il faut detruire Carthage.</span> 
+   <span>Delenda est Carthago.</span> 
+
+   <!--creation d'une liste-->
+
+   <ul><!--j'annonce que je vais creer une liste, on le fait une seule fois par liste-->
+    <!--ul permet de creer une liste non ordonnee-->
+    <li>htlm</li>
+    <li>css</li>
+    <li>javascript</li>
+    <li>php</li>
+   </ul>
+
+   <ol><!--j'annonce que je vais creer une liste ordonnee-->
+    <li>htlm</li><!--pour chaque element on ajoute la balise <li>-->
+    <li>css</li>
+    <li>javascript</li>
+    <li>php</li>
+   </ol>
+
+   <!--pour inserer une image-->
+
+   <img class="image_01" src="plage.jpg" alt="une merveilleuse plage ensoleillee">
+   <img class="image_02" src="perroquets.jpg" align="right">
+   <img src="" alt="">
+
+     <!--la creation des lien se fait en utilisant href-->  
+
+     <a href="structure.html">Premier lien</a><!--attribut href contient url qui va s'afficher si on clique sur le lien dans la page web creee -->
+
+     <hr>
+     <!--hr permet de creer un trait de separation-->
+
+     <!--Test de deux lignes sans saut de ligne, en utilisant la balise <span>-->
+<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, tempore! Tempore consequatur neque aspernatur minima numquam recusandae natus nam assumenda, autem architecto! Temporibus voluptates repellat optio recusandae eligendi reiciendis ducimus?</span>
+<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique dignissimos libero est voluptate ducimus. Laborum corrupti id quis, perferendis minima necessitatibus eum deleniti quas reiciendis, placeat tenetur eos veritatis.</span>
+
+<p class="premier_p">Cette phrase va etre utilisee pour tester la notion de modification selective du texte du fichier html par le fichier css.</p>
+<!--la classe premier_p a ete creee dans le fichier style.css-->
+
+<p class="deuxieme_p">Cette phrase egalement etre utilisee pour tester la notion de modification selective du texte du fichier html par le fichier css.</p>
+<!--la classe deuxieme_p a ete creee dans le fichier style.css-->
+
+<div><!-- la balise div permet de creer un bloc d'elements, et sert a travailler blocs par blocs, par exemple des blocs d'images que l'on veut modifier ou personnaliser ensemble-->
+    <p></p>
+    <h3></h3>
+    <span></span>
+</div>
+
+</body>
+</html>
