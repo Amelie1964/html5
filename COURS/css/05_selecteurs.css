@@ -1,0 +1,66 @@
+/*
+selecteur{
+    propriete1:valeur1;
+    propriete2:valeur2;
+    propriete3:valeur3;
+    on peut mettre des propriétés en nombre illimité}*/
+
+    section p{
+        color: red;
+        /*permet de mettre en rouge tous les p qui se trouvent dans la section : les "p" correspondants sont appelés enfants du dossier parent section". Et par conséquent le "p" qui est hors de section ne sera pas impacté par cette modiofication*/
+    }
+
+    /*sélecteur simple avec le nom de la balise*/
+    h1{
+        background-color: lightseagreen;
+        color: #fff;/*#ffffff est le code de la couleur blanche*/
+    }
+
+    section p span{
+        font-size: 60px;/*cette modification s'application à la ligne "p" de la section qu'on a ciblé avec "span" dans le fichier html*/
+    }
+    /*
+    la syntaxe "parent" "enfant:first-child" signifie que l'on veut appliquer*/
+    section h2:first-child{
+        background-color: limegreen;
+    }
+
+    section p:nth-child(2){
+        background: lightpink;
+    }
+
+    section p:last-child{
+        background-color: maroon;
+
+    }
+    section p:nth-child(6),section p:nth-child(9){
+        /*permet d'impacter le 6ème et le 8ème paragraphe de la section en mettant une police orange et de taille 36px*/
+        color: orange;
+        font-size: 36px;
+    }
+    
+    /*on peut sélectionner par even (pair) ou odd(impair) pour hiérarchiser les "nth-child"*/
+
+    section p:nth-child(even){
+        border: 1px solid limegreen
+         /*permet de mettre une bordure de couleur verte en trait continu sur tous les paragraphes pairs de la section*/
+    }
+
+    section p:nth-child(odd){
+        text-align: center;
+        /*permet de centrer tous les paragraphes impairs de la section*/
+    }
+
+    .list_1 ul li:nth-child(2){
+        /*permet de ne colorier que la deuxième ligne de la liste ul*/
+        background-color: orangered;
+    }
+
+    /* ul.list_2 // ça veut dire la balise ul qui contient une classe list_2 /*c'est equivalent à .list_2 li */
+    ul.list_2 li{
+        border:12px solid limegreen
+    }
+
+
+
+    /*pour appeler la balise qui contient la classe, la syntaxe est : "classe"."balise" ou encore on appelle directement la classe

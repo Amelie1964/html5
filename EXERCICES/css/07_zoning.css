@@ -1,0 +1,50 @@
+body{
+    width: 1300px;
+    margin: 0 auto;/*centrer la page*/
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+    header, footer{
+        background-color: #8e3557;
+        height: 100px;
+    }
+
+    nav{
+        background-color: #4a1a2c;
+        height: 30px;
+
+        }
+        
+        
+    
+
+    .a,.b,.c,.d{
+        /*les modifications 
+        width: 50%;
+        height: 250px;
+        float: left;
+
+    }
+    .a{
+        background-color: #4a1a2c;
+    }
+    .b{
+        background-color: lightgreen;
+    }
+    .c{
+        background-color: yellow;
+    }
+    .d{
+        background-color: lightblue;
+    }
+    section{
+        padding:20px;
+        height: 510px;/*pour tenir compte des hauteurs de A et C*/
+    }
+
+    footer{
+        clear: both;
+    }

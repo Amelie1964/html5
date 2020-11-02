@@ -1,0 +1,68 @@
+.green{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    padding: 15px;
+    border: 2px bold;
+    text-align: center;
+    border-radius: 12% 25% 25% 40%;
+    float: left;
+}
+
+.blue{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    padding: 15px;
+    border: 4px;
+    text-align: center;
+    border-radius: 50% 0%;
+    float: left;    
+    }
+
+.bluegreen{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(135, 250, 244);
+    padding: 15px;
+    border: 4px
+    text-align:center;
+    border-radius: 50%;
+    float: left;
+}
+
+.salmon{
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    padding: 15px;
+    border: 4px;
+    text-align: center;
+    border-radius:20% 40% ;
+    float: left;
+}
+
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 15px;
+    border: 4px;
+    text-align: center;
+    border-radius:20% 40% ;
+    float: left;
+}
+
+.empty{
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    padding: 15px;
+    border: 4px;
+    float: left;
+}
+
+.taille{
+    width: 900px;
+    margin: 0 auto;
+}

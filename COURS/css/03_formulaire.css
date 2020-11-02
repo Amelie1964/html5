@@ -1,0 +1,23 @@
+label{
+    font-weight: bold;/*pour mettre en gras tout le texte*/
+    background-color: magenta;
+    padding: 5px;
+}
+
+.sauve{
+    background-color: mediumspringgreen;
+    padding: 10px;
+    border: none;/*pour supprimer la bordure autour du bouton*/
+    color: white;
+}
+
+legend{
+    background-color: rgb(238, 163, 144);
+    padding: 15px;
+    
+}
+
+fieldset{
+    border: 1px solid lightsalmon; 
+    /*border permet de créer des bordures. Border a 3 valeurs qui sont l'épaisseur, la nature du trait et la couleur du trait: ici on a choisi 1px pour l'épaisseur du trait de bordure, puis solid (trait plein) pour le type de trait et lightsalmon pour la couleur*/
+}

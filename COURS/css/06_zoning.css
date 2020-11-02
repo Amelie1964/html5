@@ -1,0 +1,33 @@
+body{
+    width: 1300px;
+    margin: 0;
+    font-family: cursive;
+}
+
+header, footer{
+    /*on applique à header et à footer le même design*/
+    background-color: #8e3537;
+    height: 100px;
+    color: white;
+    text-align: center;
+    
+}
+nav{
+    background-color: #4a1a2c;
+    height: 60px;
+    color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+section{
+    background-color: #787746;
+    height: 500px;
+    padding: 50px;
+}
+section p{
+    background-color: orange;
+    height: 400px;
+}
+p{
+    margin: 0;
+}
