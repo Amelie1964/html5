@@ -1,0 +1,34 @@
+body{
+    width: 960px;
+    margin: 0 auto;/*margin permet de mettre le contenu de la page au centre*/
+    background-color: pink;
+}
+
+table{
+    border: 4px solid pink;
+    border-collapse: collapse;
+    }
+
+td{
+    width: 40px;
+    height: 40px;
+}
+
+.pink{
+    background-color: pink;
+}
+.yellow{
+    background-color: yellow;
+}
+.gray{
+    background-color: gray;
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}

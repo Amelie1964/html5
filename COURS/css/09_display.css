@@ -1,0 +1,21 @@
+h1{
+    background-color: lightpink;
+}
+
+a{
+    background-color: lightseagreen;
+}
+
+.block{
+    /* class block pour changer le type d'affichage et le faire passzr en bloc*/
+    display: block;
+}
+
+.inline{
+    /* classe inline pour changer le type d'affichage et le faire passer en inline */
+    display: inline;
+}
+span{
+    background-color: lightskyblue;
+}
+
