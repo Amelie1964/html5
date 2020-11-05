@@ -1,0 +1,71 @@
+body{
+    height: 1800px; /*  cette hauteur permet de scroller*/
+}
+
+.carre{
+    width: 100px;
+    height: 100px;
+}
+.carre:first-child{/*  en scrollant (en faisant défiler la page), cet élément bouge également*/
+    background-color: red;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+.carre:nth-child(2){
+    background-color: blue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+.carre:nth-child(4){
+    background-color: green;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.carre:last-child{
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.conteneur{
+    height: 1200px;
+    
+}
+.rectangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 100px 0 100px;
+    border-color:#e100ff transparent transparent transparent;
+    position: sticky;
+    left: calc(50% - 100px);/* calc est une fonction qui permet de calculer la taille : ici on veut positionner le centre du triangle avec le centre de la page. Par conséquent, la largeur du triangle étant de 200px, on fait donc : 50%largeur page - 100px  */
+    top: 0px;
+    margin-top: 100px;
+    z-index: 2;
+
+}
+.rond{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* pour créer des ronds on utilise border-radius 50% sur un carré */
+    background-color: lightskyblue;
+    position: relative;
+    left: calc(50% - 50px);
+    z-index: 1;
+}
+
+.ombre{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightslategrey;
+    position: relative;
+    left: calc(50% - 50px);
+    bottom: 90px;
+}

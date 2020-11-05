@@ -54,7 +54,7 @@ header{
     height: 100px;
     width: 100%; /* header va prendre ici la largeur de la totalité de la page */
     color: white;
-    position: fixed;/* la position fixed permet de coller l'élément tout en scrollant dans la page d'affichage
+    position: fixed;/* la position fixed permet de coller l'élément tout en scrollant dans la page d'affichage*/
     left: 0;
     top: 0;
 /* en position sticky, ie collée, les valeurs */ 
