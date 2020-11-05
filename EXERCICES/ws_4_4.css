@@ -1,0 +1,45 @@
+body{
+    width: 1300px;/*la largeur de la page est de 1300px*/
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+/* on définit la couleur de chaque bloc de 4 sous-blocs en utilisant le fichier envoyé par Amal*/
+.couleur_1{
+    background-color: peachpuff;
+}
+.couleur_2{
+background: #7a9eb1;
+}
+
+.couleur_3{
+background-color: #415845;
+}
+
+.couleur_4{
+background-color: #ffe1b3;
+}
+.zone_A{
+    width: 600px;
+    display: inline-block;
+}
+.zone_B{
+    width: 600px;
+    display: inline-block;
+}
+
+.zone_C{
+    width: 600px;
+    display: inline-block;
+}
+
+.zone_D{
+    width: 600px;
+    display: inline-block;
+}
+.zone_1{
+    width: 295px;/* ici on met 295px car on a divisé de moitié la largeur du bloc élémentairede 4 sous-ensembles
+    height: 150px;
+0    display: inline-block;
+}

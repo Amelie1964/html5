@@ -1,0 +1,63 @@
+body{
+    text-align: center;
+    height: 1200px; /* une hauteur de 1200px permet ici d'activer le scroll de la page */
+
+}
+
+.item1{
+    width: 250px;
+    height: 100px;
+    background-color: rgba(154, 205, 50,0.5);
+    /*code de couleur : 
+    rgb pour dire mélange de r(red), g(green), b(blue) dont les valeurs varient de 0 à 255 (appelées nuances)
+    rgba où on a ajouté le "a"(alpha) pour prendre en compte le critère d'opacité, et cette valeur varie de 0 à 1, exemple: 0.8*/
+    position: absolute;
+    right: 0px;
+    top: 150px;
+    /*les propriétés left, right, top et bottom sont relatives à la propriété position */
+    /* comme on peut utiliser une seule propriété, on peut aussi utiliser 3 propiétés en même temps */
+}
+.item2{
+    width: 250px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.item3{
+    width: 250px;
+    height: 100px;
+    background-color: rebeccapurple;
+    position: relative;
+    top: 150px;
+    left: 300px;
+    color: white;
+    /* les propriétés left sont relatives à la position et ne sont donc pas prise en considération sin on n'a pas indiqué au préalable une position. */
+}
+
+.item4{
+    width: 250px;
+    height: 100px;
+    background-color: green; 
+}
+.bloc{
+border: 1px solid black;
+position: relative;
+left: 100px;
+width: 400px;
+}
+
+header{
+    background-color: firebrick;
+    height: 100px;
+    width: 100%; /* header va prendre ici la largeur de la totalité de la page */
+    color: white;
+    position: fixed;/* la position fixed permet de coller l'élément tout en scrollant dans la page d'affichage
+    left: 0;
+    top: 0;
+/* en position sticky, ie collée, les valeurs */ 
+z-index: 1; /* z-index permet de donner un ordre d'affichage pour les éléments qui sont superposés, et sa valeur est ou 0 ou 1 */
+}
+

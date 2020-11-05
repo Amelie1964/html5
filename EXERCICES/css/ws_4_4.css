@@ -1,0 +1,81 @@
+body{
+    width: 1250px;/*la largeur de la page est de 1300px*/
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+/* on définit la couleur de chaque bloc de 4 sous-blocs en utilisant le fichier envoyé par Amal*/
+.couleur_1{
+    background-color: peachpuff;
+}
+.couleur_2{
+background: #7a9eb1;
+}
+
+.couleur_3{
+background-color: #415845;
+}
+
+.couleur_4{
+background-color: #ffe1b3;
+}
+
+.zone_A,.zone_B,.zone_C,.zone_D{
+    /*zone_A, zone_B, zone_C et zone_D sont les blocs de 4 zones*/
+    width: 600px;
+    display: inline-block;
+    
+}
+/*la ligne ci-dessus est équivalente à :
+.zone_A{
+    width: 600px;
+    display: inline-block;
+}
+.zone_B{
+    width: 600px;
+    display: inline-block;
+}
+
+.zone_C{
+    width: 600px;
+    display: inline-block;
+}
+
+.zone_D{
+    width: 600px;
+    display: inline-block;
+}
+*/
+
+.zone{
+    width: 295px;/* ici on met 295px car on a divisé de moitié la largeur du bloc élémentaire de 4 sous-ensembles*/
+    height: 150px;
+    display: inline-block;
+    border: 1px solid #ffff;
+}
+
+header{
+    background-color: tan;
+    height: 100px;
+}
+
+footer{
+    background-color: silver;
+    height: 100px;
+}
+
+
+nav{
+    background-color: gray;
+    height: 30px;
+}
+
+main{
+    background-color: lightskyblue;
+    padding: 15px;
+}
+
+p{
+    margin: 0;/* ceci permet de supprimer la marge créée automatiquement entre Header et Main, puis aussi entre Main et Footer à cause de l'utilisation de la balise p dans ces balises. Une autre manière consiste à écrire directement le texte dans la balise Header et Footer sans utiliser la balise de texte p*/
+}

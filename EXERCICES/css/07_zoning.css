@@ -22,9 +22,9 @@ body{
     
 
     .a,.b,.c,.d{
-        /*les modifications 
+        /*les modifications*/ 
         width: 50%;
-        height: 250px;
+        height: 100px;
         float: left;
 
     }

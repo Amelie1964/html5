@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les positions : relative, absolute, fixed</title>
+    <link rel="stylesheet" href="css/10_position.css">
+</head>
+<body>
+    <!--les positions permettent de gérer plus librement l'emplacement des éléments dans la page par rapport aux autres éléments. Il y a plusieurs valeurs possibles pour position, absolute, relative, fixes, static, sticky...-->
+
+    <!--POSITION RELATIVE : permet de positionner un element par rapport à son emplacement ou bien par rapport à d'autres éléments-->
+
+    <!--Position ABSOLUE : permet de positionner des éléments dans la page par rapport au point zéro, le point qui est en haut à gauche de la page. L'élément-->
+    <!--Position FIXED : permet de coller un élément (il reste fixe tout en scrollant la page en bas)-->
+
+    <!--Syntaxe pour la POSITION--
+        position:relative/absolute/fixed...
+        left:100px  permet de décaler l'élément de 100px à partir de la droite
+        bottom:150px    permet de décaler l'élément de 150px à partir du bas
+        top:250px   permet de décaler l'élément de 250px à partir du haut
+        right:350px permet de décaler l'élément de 350px à partir de la droite.
+    -->
+
+    <!--Cas Pratique :Exemple ci-dessous-->
+    <header>
+        Position fixed en haut à gauche : cela signifie que cette partie d'entêterestera visible au même endroit pendant qu'on fait défiler la page vers le bas.
+    </header>
+
+    <div>
+        <div class="item1">position absolue division1(right:0 top:150px)</div>
+        <div class="item2">position absolue division2( (bottom:0 right:0)</div>
+    </div> 
+    <div class="bloc"> 
+        Bloc parent  
+        <div class="item3">position relative division3(top:150px left:300px)<br>, décalé de 150px par rapport à l'emplacement de son parent et non par rapport à l'autre élément</div>
+        <div class="item4">position relative division4(</div>
+    </div>
+    
+</body>
+</html>
