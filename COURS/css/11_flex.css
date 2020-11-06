@@ -1,0 +1,86 @@
+
+
+h1 {
+    background-color: #3A4454;
+    color: whitesmoke;
+    padding: 1em;
+}
+h2 {
+    background-color: #6B737F;
+    color: white;
+    padding: 0.5em;
+}
+h3 {
+    background-color: #C2B2B4;
+    color: #610F7F;
+    padding: 0.25em;
+}
+
+.item1{
+    background-color: lightsalmon;
+    width: 80px;
+    height: 80px;
+    /*order: 3;*/
+    flex-grow: 300px;
+}
+
+.item2{
+    background-color: green;
+    width: 80px;
+    height: 80px;
+    flex-basis: 250px; /* définit la taille de base d'un élément */
+}
+
+.item3{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    order: 1;/* order change l'ordre d'affichage d'un élément par rapport au flux web, ie par rapport à l'ordre d'insertion dans le fichier html */
+}
+.contenu_1{
+    border: 1px solid orange;
+    height: 400px;
+    display: flex;
+    flex-direction: row;/* les valeurs possibles(column,,row, row-reverse, column-reverse */
+    justify-content: space-around; /* flex-start est la valeur par défaut */
+    /* les valeurs possibles de justify-content sont : center, flex-end, flex-start, space-between, space-around */
+    /*
+    flex-start: les éléments sont disposés sur la gauche du conteneur
+    flex-end: les éléments sont disposés sur la gauche.
+    space-between: les éléments sont répartis sur la totalité de l'axe principal en créant des espaces entre les éléments.
+    space-around: les éléments sont répartis sur la totalité de l'axe principal en créant des espacces alentour des éléments.
+    center: il va centrer les éléments dans le conteneur.
+    */
+    /* align-items: permet d'aligner l'élément sur la hauteur du conteneur seulement si l'élément n'a pas de hauteur (height n'est pas définie) */
+    align-items: flex-end; /* les valeutrs possibles sont : flex-end, flex-start, center, stretch, baseline */
+}
+
+.contenu_2{
+    border: 1px solid orange;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+
+.contenu_3{
+    border: 1px solid orange;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.contenu_4{
+    border: 1px solid orange;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;  
+    flex-wrap: nowrap; /*définit est ce que kes éléments seront ovligatoirement sur une seule ligne ou bien ils auront la possibilité d'etre sur plusieurs lignes (ie il y a un retour à la ligne), si la valeur est à nowrap, alors le conteneur doitr entasser tous mes elements sur une seule ligne et redimensionner la taille des éléments*/
+
+    /*flex-flow:<flex-direction>  // <flex-wrap>; on peut combiner les deux valeurs de flex-direxction et flex-wrap */
+    /* align-content : fait la même chose que align-content si on a plusieurs lignes dans le même conteneur */
+}
+
+

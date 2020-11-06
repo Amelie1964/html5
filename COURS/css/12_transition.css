@@ -1,0 +1,46 @@
+ul{
+    width: 16em;
+}
+   ul li{
+    list-style: none;
+    font-size: 1.5em; /* 1 em = 16px */
+    border: 1px solid lightgray;
+    padding: 1em;
+    
+}
+
+.right{
+    display: flex;
+}
+
+.conteneur{
+    margin-top: 3em;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.right ul li:first-child{/* il va selectionner le premier enfant de chaque ul qui se trouve à l'interieur */
+    color: white;
+    background-color: #5d5d5d;
+    font-weight: bold;
+
+}
+
+.right ul{
+    /* toutes les ul qui se trouvent a l'interieur de div qui contient une classe right */
+    padding: 0;
+    text-align: center;
+}
+
+.left ul{
+    margin-top: 6em;
+}
+.left ul li:hover{/* hover permet de déclencher des changements sur un element lorsqu'on passe dessus */
+    background: orange;
+}
+.right .liste:hover{
+    /* transform permet d'apportyer des modifications sur un élément, soit rotation avec rotate(180 degrés), soit changement de taille avec scale(1.5) */
+    transform: scale(1.5);
+    transition:ease-in-out 2s; /* transition pour gérer la durée de l'animation et le type d'animation */
+    background: linear-gradient(#d5d5d5, #8a8a8a); /* permet de créer un arrière-plan en couleur dégradé */
+}
