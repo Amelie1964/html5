@@ -1,0 +1,148 @@
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #8e3537;
+    height: 100px;
+
+}
+
+nav{
+    background-color: #4A1A2C;
+    height: 50px;
+    padding-top: 2em; /* Pour décaler la ligne des 5 liens du haut et du bas de la barre de nav */
+    line-height: 45px; /* On peut remplacer line-height par margin (left ou right) */
+    
+}
+
+nav a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 2em;
+    border-right: 1px solid #fff;
+    padding-right: 2em;
+}
+footer{
+    background-color: palevioletred;
+    height: 100px;
+}
+
+nav a:last-child{
+    /*  pour sélectionner le dernier enfant "a"qui se trouve à l'intérieur de nav */
+    border-right: none; /* supprimer la bordure de droite */
+}
+
+section{
+    /* On applique display:flex sur le parent*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15px; /* création d'une bordure blanche */
+    padding-bottom: 15px; /*  */
+}
+
+
+section div{
+    /*  on sélectionne toutes les div qui sont à l'intérieur de section*/
+    width: 44vw; /* signifie que chaque div a l'équivalent de 44% de largeur */
+    height: 50vh;
+}
+
+.zone1,.zone4{
+    /* On sélectionne zone1 et zone4 qui ont une couleur bleue en dégradé */
+    background: linear-gradient(to left, #40a497, #6840a4);
+}
+
+.zone2,.zone3{
+    /* On sélectionne ensemble zone2 et zone3, qui ont une couleur turquoise */
+    background: #73ADCE;
+}
+
+main{
+    border: 1px solid black;
+}
+
+.zone3, .zone4{
+    /* on sélectionne en même temps zone3 et zone4 pour créer une marge blanche en partie haute de 15px*/
+    margin-top: 15px;
+}
+
+/* Appel des medias queries pour optimiser l'affichage */
+
+@media screen and (max-width: 768px){
+    /* On annonce ici que la taille de l'écran a changé */
+
+.container{
+width: 90%;
+}
+
+header{
+    background-color: #568e35;
+}
+
+section div{
+    /* On modifie à l'affichage la largeur des 4 div de la section. */
+    width: 80vw;, /* Chaque div va occuper 80% de la largeur de la section */
+}
+
+section{
+    flex-direction: column; /*  On peut changer l'axe principal de flex pour avoir l'affichage en bloc pour chaque div*/
+    /* Cela permet ici de mettre les 4 div en mode colonne, ie on affiche 1 div par ligne, celles-ci occupant chacune toute la largeur de la section */
+    margin-left: 15px;/* Pour avoir un peu de margin à gauche et à droite */
+}
+
+nav a{
+    display: block; /* Les balises de liens sont inline. Par conséquent, pour qu'elles soient des balises block à l'affichage on utilise la fonction "display:1px" */
+    font-size: 16px;
+}
+nav{
+    height: 150px;
+line-height: 30px;
+}
+
+.zone2{
+    margin-top: 15px;
+    background-color: orange; /* Permet en visualisation par écran tablette de changer la couleur d'affichage de la deuxième div */ 
+}
+
+}/* Ici c'est la fin de la fourchette tablette max-width:768px*/
+
+@media screen and (min-width:992px) and (max-width:1200px){ /* le début d'un nouvel intervelle pour les tailles au-delà de 992px */
+    /* Ici on ajoute le css pour réajuster l'affichage  pour kes écrans supérieurs à 992px */
+
+    .container{
+      width: 90%;  
+    }
+
+    section{
+        justify-content: space-around;
+        padding-left: 15px;
+        padding-right: 15px ;
+    }
+
+    section div{
+        width: 41vw;
+    }
+
+    .zone2,.zone3{
+        background-color: #F479D8;
+    }
+
+header{
+    background-color: #d46d19;
+}
+
+.zone1,.zone4{
+    background-image:url("../img/lion.jpg");
+    background-size:cover; /* Avec cover l'image couvre la totalité du bloc (même si l'image est plus grande */
+}
+footer{
+    background-color: #d46d19;
+}
+
+/* zone1 et zone4 contiennent l'image du lion, et zone2 et zone3 change de couleur pour avoir un background #F479D8  *:*/
+
+} /* Ici c'est la fin de l'intervelle 992px */

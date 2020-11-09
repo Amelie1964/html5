@@ -1,0 +1,23 @@
+body{
+    margin: 0 auto;
+    /* on peut utiliser ici background-image et background-repeat pour insérer un background uniquement sur l'image et non pas sur le titre associé à chaque image insérée */
+    background: url("../img/bkg.jpg"); /* ici on met le chemin de l'image bkg.jpg*/
+}
+
+div{
+   /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+    background-color: #000;
+    color: #D2E7E2;
+    padding: 1vw; /* vw:view width, vh: view height, 1vw vaut 1% de la largeur affichée */
+}
+
+nav a{
+    font-size: 26px;
+}

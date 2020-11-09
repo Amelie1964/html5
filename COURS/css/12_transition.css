@@ -17,6 +17,7 @@ ul{
     margin-top: 3em;
     display: flex;
     font-family: sans-serif;
+    align-items: flex-end; /* on a supprimé le margin-top=6em dans la classe left ul, et on a plutôt mis ici un align-items:flex-end pour que toutes les colonnes du tableau  global soient bien alignées */
 }
 
 .right ul li:first-child{/* il va selectionner le premier enfant de chaque ul qui se trouve à l'interieur */
@@ -33,7 +34,7 @@ ul{
 }
 
 .left ul{
-    margin-top: 6em;
+   /* margin-top: 6em; */
 }
 .left ul li:hover{/* hover permet de déclencher des changements sur un element lorsqu'on passe dessus */
     background: orange;
