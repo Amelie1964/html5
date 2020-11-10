@@ -1,0 +1,15 @@
+body{
+    width: 960px;
+    margin: 0 auto;/*margin permet de mettre le contenu de la page au centre*/
+}
+
+table{
+    border: 2px solid gray;
+    width: 800px;
+} 
+
+tr{
+    width: 800px;
+    background-color: white;
+    text-align: center;
+}
