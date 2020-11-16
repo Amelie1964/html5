@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Le Bilan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h6 class="orange">CITY GUIDE . PARIS</h6>
+        <hr>
+        <h1>LE BILAN</h1>
+        <hr>
+    </header>
+    <nav>
+        <a style="text-decoration:none" href="#la_salle">Salle</a>
+        <a style="text-decoration:none" href="#le_service">- Service</a>
+        <a style="text-decoration:none" href="#le_dressage">- Dressage</a>
+        <a style="text-decoration:none" href="#le_gout">- Goût</a>
+    </nav>
+    <main>
+        <section>
+            <div>
+            <img src="img/assiette.jpg" class="assiette" alt="assiette">
+            </div>
+            <div>
+                <p class="italic">Exemple de plat</p>
+                <hr>
+                <p>MERLU DE LIGNE</p>
+                <p>CAROTTES NOUVELLES</p>
+                <p>EPICES DOUCES</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3 id="la_salle">LA SALLE</h3>
+                <!--Ci dessus, création de l'ancre sur "LA SALLE" en la reliant ensuite au lien "Salle" affiché dans la barre de navigation-->
+                <!--Créer une ancre est facile : il suffit d'attribuer à l'élément vers lequel on veut pouvoir pointer un identifiant (avec l'attribut HTML id) et d'y associer un lien débutant par le caractère dièse #, suivi du nom de cet identifiant.  -->
+                <hr>
+                <p>Ambiance brute, table en bois ancien, béton ciré au sol. La salle lumineuse est très agréable, elle est ouverte sur la cuisine. Au fond de la salle, une jolie table ronde à vue sur une rue sur un petit jardin parisien. À l'entrée un joli sol en carreaux de céramique, quelques plumes de paon et de bien jolies bouteilles anciennes...<br>
+                <p>Le nombre des tables est limité, ce qui rend le restaurant très appréciable, mais aussi très prisé !</p>
+                <span>LA NOTE
+                <i class="fa fa-star"></i><!--étoile blanche sur fond noir --><!-- La balise <i> est la balise "icône"-->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fad fa-star-half-alt"></i><!-- demi-étoile blanche-->
+                <i class="fa fa-star" style="font-size: 1em; color: gray;"></i></span><!-- étoile grise-->
+            </div>
+            <div>
+                <img src="img/resto_01.jpg" alt="resto1">
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="img/resto_02.jpg" alt="resto2">
+            </div>
+            <div>
+                <h3 id="le_service">LE SERVICE</h3>
+                <hr>
+                <p>Service toujours impeccable. L'ensemble de la table est servi rapidement, la corbeille de pain régulièrèment pleine, les serveurs expliquent le menu avec beaucoup d'attention et ont d'excellents conseils pour marier mets et vins.</p>
+                <p> On reconnaît l'ensemble de l'équipe à ses tabliers bleus.</p>
+                <span>LA NOTE
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="color: gray;"></i></span>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3 id="le_dressage">LE DRESSAGE</h3>
+                <hr>
+                <p>Le dressage c'est un peu la marque de fabrique du chef, avec la cuisine bien sûr. Ses plats sont de vrais petits tableaux de maître. Une belle recherche dans les formes et les couleurs très agréables visuellement.</p>
+                <span>LA NOTE
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="color: gray;"></i></span>
+            </div>
+            <div>
+                <img src="img/resto_03.jpg" alt="resto3">
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="img/resto_04.jpg" alt="resto4">
+            </div>
+            <div>
+                <h3 id="le_gout">LE GOÛT</h3>
+                <hr>
+                <p>Last but not least, le goût. C'est le point le plus important, et tellement bien ajusté ici. Les papilles voltent et virevoltent au rythme des saveurs si justes, des cuissons si parfaitement maîtrisées.
+                    Chaque plat, chaque association, rien n'est laissé au hasard, de l'élément principal à la toute petite feuille d'herbe délicatement posée sur le dessus du plat. Emerveillement des sens et frénésie de créativité sont au rendez-vous.</p>
+                    <span>LA NOTE
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fad fa-star-half-alt"></i></span>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="img/plan.png" alt="Plan">
+        <p class="">CITY GUIDE</p>
+        <hr>
+        <h1>SEPTIME</h1>
+        <hr>
+        <p>30 RUE DE CHARONNE - 75011 PARIS</p>
+        <p>01 43 67 38 29</p>
+        <p class="italic">Lundi soir - Mardi à Vendredi midi & soir</p>
+
+    </footer>  
+    
+</body>
+</html>

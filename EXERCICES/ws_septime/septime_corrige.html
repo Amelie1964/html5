@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquette Restaurant Septime - Corrigé</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/septime_corrige.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+</head>
+<body>
+    <div class="container"><!-- La division globale qui va contenir la totalité de la page-->
+        <header>
+            <!--Pour centrer tout le contenu de header, on va mettre du text-align:center dans le css -->
+            <h3>CITY GUIDE - PARIS</h3>
+            <hr>
+            <h1>Le bilan</h1><!-- On va transformer ce texte et le mettre en majuscules à partir de "text-transform" positionné à "uppercase" dans le css-->
+            <hr>
+            <nav>
+                <!-- Syntaxe pour intégrer du texte dans la création du lien : a{texte} puis Enter-->
+                <a href="#">Salle</a> <!-- Syntaxe : a{Salle} Enter-->
+                <a href="#">Service</a>
+                <a href="#">Dressage</a>
+                <a href="#">Goût</a>
+            </nav>
+        </header>
+
+        <main>
+            <section><!-- Début section Assiette-->
+                <!-- Elle va contenir deux blocs sous forme de div-->
+                <!-- Syntaxe : section>div>img+div>h3+hr+p*3 -->
+                <div class="assiette"><!-- On crée une div de classe "assiette" et on y insère l'image-->
+                    <img src="img/assiette.jpg" alt="Assiette">
+                </div>
+                <div class="text_assiette"> <!-- cette classe permet de donner de la dimension à ce texte -->
+                    <h2>Exemple de plat</h2>
+                    <hr>
+                    <p>Merlu de ligne</p>
+                    <p>Carottes nouvelles</p>
+                    <p>Epices douces</p>
+                </div>
+            </section><!-- Fin section Assiette-->
+            <section><!-- Début section Salle-->
+                <div class="salle">
+                    <h3>La salle</h3>
+                    <p>Ambiance brute, table en bois ancien, béton ciré au sol. La salle lumineuse est très agréable, elle est ouverte sur la cuisine. Au fond de la salle, une jolie table ronde à vue sur une rue sur un petit jardin parisien. À l'entrée un joli sol en carreaux de céramique, quelques plumes de paon et de bien jolies bouteilles anciennes...<br>
+                    <p>Le nombre des tables est limité, ce qui rend le restaurant très appréciable, mais aussi très prisé !</p>
+                    <span>LA NOTE
+                        <i class="fa fa-star"></i><!--étoile blanche sur fond noir --><!-- La balise <i> est la balise "icône"-->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i><!-- demi-étoile blanche-->
+                        <i class="fa fa-star-o"></i>
+
+                </div>
+                <div><img src="img/resto_01.jpg" alt="">
+                </div>
+            </section>
+            <section>
+                <div><img src="img/resto_02.jpg" alt="">
+                </div>
+                <div class="service">
+                    <h3>Le service></h3>
+                        <p>Service toujours impeccable. L'ensemble de la table est servi rapidement, la corbeille de pain régulièrèment pleine, les serveurs expliquent le menu avec beaucoup d'attention et ont d'excellents conseils pour marier mets et vins. On reconnaît l'ensemble de l'équipe à ses tabliers bleus.</p>
+                        <span>LA NOTE
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-0"></i></span>
+                </div>
+            </section>
+            <section><!-- Début de section Dressage-->
+                <div class="dressage">
+                    <h3>Le dressage</h3>
+                    <p>Le dressage c'est un peu la marque de fabrique du chef, avec la cuisine bien sûr. Ses plats sont de vrais petits tableaux de maître. Une belle recherche dans les formes et les couleurs très agréables visuellement.</p>
+                    <span>LA NOTE
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-0"></i></span>
+                </div>
+                <div><img src="img/resto_03.jpg" alt="Restau3"></div>
+            </section>
+            <section>
+                <div>
+                    <img src="img/resto_04.jpg" alt="resto4">
+                </div>
+                <div class="gout">
+                    <h3>LE GOÛT</h3>
+                    <p>Last but not least, le goût. C'est le point le plus important, et tellement bien ajusté ici. Les papilles voltent et virevoltent au rythme des saveurs si justes, des cuissons si parfaitement maîtrisées.
+                        Chaque plat, chaque association, rien n'est laissé au hasard, de l'élément principal à la toute petite feuille d'herbe délicatement posée sur le dessus du plat. Emerveillement des sens et frénésie de créativité sont au rendez-vous.</p>
+                        <span>LA NOTE
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-0"></i></span>
+                    </div>
+            </section> 
+        
+        </main>
+    
+
+        <footer>
+            <img src="img/plan.png" alt="Plan">
+            <h5 class="city_guide">city guide</h5>
+            <hr>
+            <h5 class="septime">Septime</h5>
+            <hr>
+            <p>
+              30 rue de Charonne - 75012 Paris
+            </p>
+            <p>01 43 67 38 29</p>
+            <p>Lundi soir - Mardi à Vendredi midi & soir</p>
+
+        </footer>
+    </div>
+</body>
+</html>
+
+
+<section>
+    <div>
+        <img src="" alt="">
+        <div>
+            <h3></h3>
+            <hr>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;/* box-sizing positionné à "border-box" permet de garder tout le temps la même taille extérieure du bloc même si on ajoute du padding et/ou des bordures */
+    /* si on ne spécifie rien, par défaut box-sizing est positionné à "content-box". */   
+}
+body{
+    width: 1250px;
+}
+.container{
+    width: 1000px;
+    display: flex;
+}
+.bloc_haut{
+    background-color: rgba(73, 24, 9, 0.267);
+    height: 150px;
+}
+img{/* Permet de garder et afficher l'intégralité de l'image dans son bloc-parent si celui-ci est de petite taille  */
+    width: 100%;
+}

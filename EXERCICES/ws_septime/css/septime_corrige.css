@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;/* box-sizing positionné à "border-box" permet de garder tout le temps la même taille extérieure du bloc même si on ajoute du padding et/ou des bordures */
+    /* si on ne spécifie rien, par défaut box-sizing est positionné à "content-box". */   
+}
+div,h1,h2,h3,h4,h5,h6,section,p,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: #f5f5f6;
+}
+.container{
+    width: 1024px;/* La taille de la page */
+    margin: 0 auto;/* Permet de centrer la page dans le navigateur, créer des margins à gauche et à droite */
+    /* margin: 0 pour top et bottom, et "auto" : automatique selon le reste  de l'espace de la page selon la taille mentionnée dans "width" */
+    background-color: #f6f6f7;
+    font-family: "Cormorant Garamond", serif; 
+}
+header{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+header h1{ /* Pour travailler sur le contenu de h1 qui est dans header */
+    font-size: 3em;/* la taille de la police est de 3em, ie 48px */
+    text-transform: uppercase; /* uppercase transforme tout le texte et le met en majuscules */
+    letter-spacing: 3px; /* Pour ajouter de l'espacement entre les lettres */
+    font-weight: 500; /* Pour changer l'épaisseur du texte*/
+}
+nav a{ /*  Pour sélectionner toutes les balises "a" qui se trouvent à l'interieur de la balise nav*/
+    color: #000;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+}
+section{
+    display: flex;
+    align-items: center;
+}
+.assiette img{
+    border-radius: 50%;
+}
+.text-assiette{
+    width: 40%;
+    text-align: right;
+    /*border: 1px solid red;*/ /* cette bordure est mise juste le temps de faire déplacer le texte pour le superposer à l'assiette, et ensuite on le supprime ou on le met en commentaire pour qu'il ne soit plus pris en compteb par l'interprétateur */
+    position: relative;
+    right: 150px;
+}
+.text_assiette h3:first-child{ /*  On peut aussi utiliser comme sélecteur .text_assiette h3 */
+    font-style: italic;
+}
+.text_assiette p{ /* on sélectionne tous les p qui se trouvent à l'intérieur de div qui a la classe text_assiette} */
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+line-height: 13px;
+}
+section h3{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+}
+.salle p,.service p,.dressage p,.gout p{ /* on va appliquer le même style sutr tous ces p, on peut les regrouper ensemble avec une virgule */
+margin-top: 5px;
+font-weight: bold;
+font-style: italic;
+font-size: 16px;
+margin-bottom: 20px;
+}
+.salle,.dressage,.service,.gout{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.salle span,.service span,.dressage span,.gout span{
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* créer des espacements entre les lettres */
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 50px; /* créer un margin à droite */
+    margin-top: 15px; /* créer un margin en haut */
+}
+.salle span i,.service span i,.dressage span i, .gout span i{
+    /* On peut appeler les i des 4 blocs en même temps puisqu'il s'agit du même style à appliquer */
+    font-size: 9px;
+    vertical-align: 2px; /*  il va aligner le texte verticalement sur la heuteur*/
+}
+footer{
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+.septime{
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+footer p:nth-child(5){
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.city_guide{
+    text-transform: uppercase;
+    position: relative;
+    bottom: 6em;
+}
+footer img{ /*  on sélectionne image de footer */
+    opacity: 0.1; /* opacity va changer la transparence de l'image, du bloc, du texte, et la valeur varie de 0 à 1 */
+}
+footer p{/* on sélectionne tous les p de footer pour les mettre en gras */
+    font-weight: bold;
+}
