@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+/* On initialise les margins, bordures et paddings de toutes les balises */
+div,body{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+width: 1250px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    margin-left: 15px;
+}
+.ligne1{
+    height: 100px;
+    background: linear-gradient(to bottom, #555,#000);
+}
+section img{
+    width: 100%; /* Si l'image est de grande taille, on doit avoir la taille qui s'adapte au bloc-parent quand la taille de celui-ci est modifiée */
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.blocA{
+    display: flex;
+}
+.texte{
+    text-align: center;
+    padding: 24px;
+    background-color: #fff;
+}
+.blocA p{
+    color: gray;
+}
+.texte span{ /* on sélectionne les span qui sont à l'intérieur de la div de classe "texte" */
+    color: orange;
+}
+footer{
+    height: 100px;
+    background: linear-gradient(to bottom, #555,#000);
+    position: relative;
+    bottom: 50px;
+}
+main{
+    z-index: 2;
+    position: relative;
+}
+nav a:hover{
+    color: orange;
+}
+.blocA img:hover{
+transform: scale(1.4);
+}
+.blocA img{
+    transition: 0.5s ease-in; /* l'animation est mise ici pour que la transition soit vue avent ET après le hover ((on déplace la transition sutr le bloc directement sans hover pour visualiser l'effet de la transition dans les deux sens (lorsque le curseur passe sur l'imager et lorsqu'ikl quitte ausii*/
+    /* On utilise les transitions pour raffiner l'animation sur la durée, le rythme...*/
+}

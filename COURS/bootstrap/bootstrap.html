@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap FLEX</title>
+    <!-- Appel du fichier css en local-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!--L'appel du fichier css personnel-->
+<!-- L'appel du fichier css personnel se fait en dernier (tenir compte du flux web)  aprèqs l'appel du fichier bootsrap, c'est très important-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- L'appel des polices se fait avec deux manières : -->
+    <!--soit avec le lien récupéré dans fonts.google.com après avoir choisi la police et les styles qui seront utilisés-->
+    <!-- soit en utilisant le @import que l'on met dans le fichier style.css associé à bootstrap.html-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- d-flex classe pour mettre l'affichage en flex-->
+                <!-- classe flex-row, flex-column permet de faire flex-direction (le sens de disposition des éléments-->
+                <div class="d-flex flex-row bd-highlight border border-danger mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex flex-row-reverse bd-highlight border border-danger">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+            </div>
+         </div> 
+          <div class="row">
+            <div class="col-md-12">
+                <!-- d-flex classe pour mettre l'affichage en flex-->
+                <h3>Les classes Jutify content</h3>
+                <h4>Justify content center</h4>
+
+                <div class="d-flex justify-content-center bd-highlight border border-danger mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-between bd-highlight border border-danger">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+            </div>
+         </div> 
+         <div class="row">
+            <div class="col-md-12">
+                <!-- d-flex classe pour mettre l'affichage en flex-->
+                <h3>Les classes Jutify content</h3>
+                <h4>Justify content center</h4>
+
+                <div class="d-flex justify-content-center bd-highlight border border-danger mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+                <div class="d-flex justify-content-between bd-highlight border border-danger">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                </div>
+            </div>
+         </div> 
+         <div class="row">
+            <div class="col-md-12">
+                <h3>Barre de progression</h3>
+
+                <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+         </div> 
+    </div>   
+</body>
+</html>

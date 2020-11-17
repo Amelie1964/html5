@@ -3,16 +3,69 @@
     /* si on ne spécifie rien, par défaut box-sizing est positionné à "content-box". */   
 }
 body{
+    width: 1300px;
+    margin: 0 auto;
+}
+header{
+    width: 1300px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header div{
+    width: 50%;
+}
+header div h1{
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    font-size: small;
+    color: gray;
+}
+.bloc_haut{
     width: 1250px;
+    background-color: #000;
+    height: 100px;
 }
 .container{
     width: 1000px;
+    margin: 0 auto;
+}
+main section{
+    width: 1000px;
+    margin: 0 auto;
     display: flex;
 }
-.bloc_haut{
-    background-color: rgba(73, 24, 9, 0.267);
-    height: 150px;
+section div{
+    width: 25%;
+    text-align: center;
+}
+section div p{
+    color: gray;
+}
+section div span{
+    color: orange;
 }
 img{/* Permet de garder et afficher l'intégralité de l'image dans son bloc-parent si celui-ci est de petite taille  */
     width: 100%;
+}
+p:hover{
+    background-color: blue;
+    color: #fff;
+}
+.transformation{
+    height: 400px;
+}
+.transition:hover{
+    height: 600px;
+
+}
+.bloc_bas{
+    width: 1250px;
+    background-color: #000;
+    height: 80px;
 }
