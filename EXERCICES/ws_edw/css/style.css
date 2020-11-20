@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Ici on initialise les margins, bordures et paddings de toutes les balises */
+body,head,section,div{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana,sans-serif;
+    margin: 0 auto;
+}
+header{
+    height: auto ;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+}
+#nav li{/*  annulation des styles par défaut de la liste pour obtenir des liens alignés sans puce de liste.*/
+    display: inline;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+section img{
+    width: 100%;
+}
+.bloc1{ /* Caractéristiques du bloc1 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../img/fondant.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 1030px;
+}
+.bloc_left{/* le bloc positionné à gauche */
+    width: 400px;
+    height: 200px;
+    border:10px solid white;
+    background-color: lightgray;
+    opacity: 0.3;
+}
+.bloc2{/* Caractétristiques du bloc2 */
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+text-align: end;
+}
+.text_catering{/* création de la zone de texte dans Bloc2 et contenant "catering" */
+    width: 400px;
+    height: 50px;
+    border: 2px solid turquoise;
+    position: relative;
+    top: 40px;
+    right: 100px;
+    background-color: white;
+    vertical-align: middle;
+    z-index: 2;
+}
+.text_tradition{ /* Création de la zone de texte dans Bloc2 et contenant le paragraphe de "tradition" */
+    width: 500px;
+    height: 700px;
+    border: 2px solid turquoise;
+    padding: 25px;
+      line-height: 2.5;
+    position: relative;
+    top: 20px;
+    right: 150px;
+    background-color: white;
+}
+.bloc3{ /* Caractéristiques du bloc3 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.text_menu{
+    /* Création de la zone de texte contenant le paragraphe de "Menu" */
+    width: 500px;
+    height: 750px;
+    border: 2px solid turquoise;
+    padding: 25px;
+    line-height: 2;
+    position: relative;
+    top: 20px;
+    left: 150px;
+    background-color: white;
+    z-index: 2;
+}
+.lien_reservation{
+    text-decoration: none;
+    background-color: rgba(149, 216, 243, 0.911);
+}
+
+footer{
+    height: 100px;
+    background-color:lightgray;
+    text-align: center;
+}
+footer a{
+    color: gray;
+}

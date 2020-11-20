@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body,main,div {
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+.container {/* classe container qui centralise la page avec une taille fice et margon:0 auto */
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 1100px;
+    text-align: center;
+}
+.row{/* la classe qui permet de créer une ligne tout en mettant ses enfants (les div) en display:flex pour les placer les uns à coté des autres*/
+    
+    display: flex;
+    border: 2px solid white;
+}
+
+.col_1 {
+    width: 8.333333%;
+}
+
+.col_2 {
+    width: 16.666666%;
+}
+
+.col_3 {
+    width: 25%;
+}
+
+.col_4 {
+    width: 33.333333%;
+}
+
+.col_5 {
+    width: 41.666666%;
+}
+
+.col_6 {
+    width: 50%;
+}
+
+.col_7 {
+    width: 58.333333%;
+}
+
+.col_8 {/* 8 colonnes fusionnées */
+    width: 66.666666%;
+}
+
+.col_9 {/* 9 colonnes fusionnées */
+    width: 75%;
+}
+
+.col_10 {/* 10 colonnes fusionnées */
+    width: 83.333333%;
+}
+
+.col_11 {/* 11 colonnes fusionnées */
+    width: 91.666666%;
+}
+
+.col_12 {/*12 colonnes fusionnées */
+    width: 100%;
+}
+.bleu{
+    background-color: lightblue;
+}
+.rose{
+    background-color: pink;
+}
+.beige{
+    background-color: rgb(240, 223, 207);
+}
+.vert{
+    background-color: lightgreen;
+}

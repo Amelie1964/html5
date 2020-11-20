@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grilles Flex </title>
+    <link rel="stylesheet" href="css/14_grid.css">
+</head>
+<body>
+    <main class="container">
+        <div class="row"> <!--Creation de la première ligne-->
+            <div class="col_4 bleu"><!-- Création de la première colonne qui prend 4 colonnes-->
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus tenetur, molestiae consequuntur voluptate dicta temporibus atque ipsum ad cupiditate accusamus dolore perspiciatis excepturi quo ut a suscipit iste dolorem omnis?  
+            </div>
+            <div class="col_4 rose"><!-- Création de la deuxième colonne qui contient 4 colonnes-->
+                B 
+            </div>
+            <div class="col_4 green"><!-- Création de la troisième colonne : elle devient le parent de trois colonnes que l'on va disposer en faisant un display flex pour que la troisième colonne passe en dessous des deux précédentes-->
+                <div class="row"></div>
+                <div class="col_6 bleu">1/ sous-colonne</div>
+                <div class="col_6 beige">2/ sous-colonne</div>
+            </div> 
+           
+
+            </div>   
+        </div>
+        
+        <div class="row"> <!-- Création de la deuxième ligne -->
+            <div class="col_1 beige"></div>
+            <div class="col_10 rose">Centre</div>
+            <div class="1 beige"></div>
+        </div>
+        <!--.row>.col_4*3 -->
+        <div class="row"><!-- Création de la troisième ligne-->
+            <div class="col_4 beige">Coucou</div>
+            <div class="col_4 beige">Coucou</div>
+            <div class="col_4 beige">Coucou</div>
+        </div>
+    
+
+    </main>
+    
+</body>
+</html>
