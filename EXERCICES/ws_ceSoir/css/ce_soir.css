@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing positionné à "border-box" permet de garder tout le temps la même taille extérieure du bloc même si on ajoute du padding et/ou des bordures */
+    /* si on ne spécifie rien, par défaut box-sizing est positionné à "content-box". */
+}
+
+div,h1,h2,h3,h4,h5,h6,section,p,body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    margin:0 auto;
+    background-color: white;  
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+.caveat{
+ font-family: 'Caveat Brush',
+ cursive;
+}
+section img{
+    width: 100%;
+}
+header,.image{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+   display: flex;
+    justify-content: space-between;
+     background-image: url(../img/planches.jpg);
+     padding: 25px;
+}
+
+header h1 {
+    height: 400px;
+    /* Pour travailler sur le contenu de h1 qui est dans header */
+    font-size: 3em;
+    /* la taille de la police est de 3em, ie 48px */
+    text-transform: uppercase;
+    /* uppercase transforme tout le texte et le met en majuscules */
+    letter-spacing: 2px;
+    /* Pour ajouter de l'espacement entre les lettres */
+    font-weight: 400;
+    /* Pour changer l'épaisseur du texte*/
+}
+
+nav li {
+    /*  annulation des styles par défaut de la liste pour obtenir des liens alignés sans puce de liste.*/
+    display: inline;
+    list-style: none;
+}
+nav a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+nav a li{
+    font-family: sans-serif;
+}
+
+.triangle {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-top: 150px solid #E53F6F;
+    border-left: 150px solid transparent;
+    opacity: 0.6;
+    position: relative;  
+    right: 150px;
+    bottom: 300px;
+}
+.cerf{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 450px;
+    bottom: 300px;
+}
+h2{
+    text-transform: uppercase;
+}
+.graine1{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+}
+
+.graine2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    right: 200px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.text_rose{
+    color: #E53F6F;
+}
+.dim_image{
+    width: 700px;
+}
+.egg{
+    height: 800px;
+    background-image: url(../img/eggs.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px;
+}
+i{
+    color: #E53F6F;
+}
+
+.espace{
+padding: 25px;
+}
