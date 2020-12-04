@@ -1,0 +1,28 @@
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+.niveau1 li{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+color: black;
+}
+/* On veut mettre les éléments les uns à coté des autres
+On appelle le nom de la classe (et non ul car display flex risque de mettre tous les elements les uns a cote des autres */
+
+.niveau1{
+    display: flex;
+    justify-content: space space-evenly;
+background-color: gray
+}
+.niveau2{
+    display: none;
+}
+.niveau1 li:hover{
+    background-color: #EDD;
+}
+.niveau1 li:hover .niveau2{/* hover sur le niveau1 et display sur le niveau2*/
+display: block;
+}

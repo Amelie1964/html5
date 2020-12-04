@@ -1,0 +1,87 @@
+/* MENU DÉROULANT
+Chaque sous-menu est lié à un onglet du menu principal, et ne doit apparaître que lorsque l'utilisateur passe sa souris sur l'onglet en question.
+*/
+
+*{/* Initialisation pour éviter tout chevauchement */
+    box-sizing: border-box;
+}
+img{/* Initialisation pour la taille des images */
+    width:100%;
+}
+/* Initialisation de toutes les  balises sur tous les navigateurs */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure,figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-align: center;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+}
+nav ul{
+    list-style-type: none;/* Anulation des puces des listes */
+    display: flex;
+}
+nav ul li{
+    width: 20%;
+    text-align: center;
+    position: relative;/* pour replacer les sous-menus correctement sous leur onglet et qu'ils aient tous la même taille */
+}
+
+nav a{
+    text-decoration: none;/* annulation du soulignement des liens */
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0; /* 10px en haut et en bas, 0px à gauche et à droite */
+    display: block;/* les liens étant de type inline, on les passe en mode  block pour que ce soit le contenant, et non le contenu limité au texte, qui ait le background bleu défini dans nav */
+}
+.sous a :hover{
+    color: violet;
+    border-bottom: 2px solid orange;
+}
+.sous{
+    display: none;/*sous-menu cachés par défaut, et affichés si on passe dessus et affichés si on passe la souris sur l'onglet du menu principal correspondant (avec la fonction display:block) */
+    box-shadow: 0px 1px 2px #CCC;/* ombre légère autour des sous-menu pour les distinguer du reste de la page */
+    /*couleur de fond appliquée aux sous-menus */
+    position: absolute;/* Pour que lorsqu'on affiche le sous-menu, le contenu situé sous le menu ne soit pas poussé vers le bas (on les retire du flux normal de la page et ainsi, les sous-menus n'impactent plus le contenu suivant du menu */
+    width: 100%;
+    z-index: 3000;/* z-index élevé pour que les sous-menus ne passent pas derrière le contenu qui suit le menu */
+}
+nav ul li:hover .sous{/* Pour cibler un sous-menu de classe "sous" lorsqu'un utilisateur passe la souris sur un élément li de la liste représentant le menu principal. */
+    display: block;
+}
+.sous li{/* Affichage des sous-menus */
+    width: 100%;
+    flex: none;/* on annule le display-->flex pour que les éléments des sous-menus s'affichent les uns en dessous des autres et occupent tout l'espace disponible dans leur conteneur */
+    text-align: left;/*alignement du texte à gauche */
+}
+.sous a{/* mise en forme des onglets des sous-menus*/
+padding: 10px;/* ajout d'une marge interne */
+border-bottom: none;/* suppression de la bordure basse issue du menu principal */
+}
+.sous a:hover{
+    border-bottom: none;/* suppression de la bordure basse du menu principal */
+    /*background-color: RGBa(200,200,200,0,0.1);/* couleur de fond lorsqu'on passe la souris sur un élément */
+}
+.deroulant a::after{/* insertion du symbole après le texte en utilisant le pseudo-élément ::after, puis définition de la taille du symbole*/
+    content:"\0025BC";/* symbole triangle orienté vers le bas. Sinon, sur font awesome on a aussi l'unicode f0d7 */
+    font-size: 12px;
+    color: white;
+    margin-left: 15px;/* pour mettre un espacement entre le texte du lien et le triangle */
+}
+.sous a::after{
+    content:"";/* on supprime le triangle du menu déroulant qui affecte les sous-menus, en mettant ici vide dans "content" */
+}
+.sous li{
+    color: black;
+}
