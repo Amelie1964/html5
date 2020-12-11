@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+     <!-- la balise meta pour la compatibilité avec Miscrosoft edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <!--Appel de la bibliothèque Font awesome-->
+    <script src="https://kit.fontawesome.com/10d31c9e9f.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton%7CLemonada%7COswald" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Titre du site apparaissant par exemple sur une recherche google-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon premier site Multipage</title>
+    <!--Description sous le titre dans la recherche google, les moteurs de recherche s'en servent un peu comme des mots-clés pour les recherches-->
+    <meta name="description" content="Mon premier site html-css multipage">
+</head>
+<body>
+    <header><!--l'entete du site, qui peut contenir un logo, un slogan, une bannière, menu de navigation...-->
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i></a>
+                <!-- pour creer un lien sur des icons font awesome il faut les deplacer de l'interieur de la balise "a" -->
+                <!--l'identifiant "target" positionné à "blank"permet d'ouvrir un lien dans un nouvel onglet-->
+            <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+
+    </header>
+    <!--On a fait un display flex sur header, par conséquent on a choisi de la barre de navigation hors de header-->
+    <!--Barre de navigation-->
+    <nav>
+        <ul class="nav_bar">
+            <li><a href="index.html">Structure</a></li>
+            <li><a href="texte.html">Texte</a></li>
+            <li><a href="selecteur.html">Sélecteur</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="position.html">Position</a></li>
+            <li><a href="zoning.html">Zoning</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="liste.html">Liste</a></li>
+            <li><a href="lien.html">Liens & Menu</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li  class="active"><a href="">Animation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+        <h2>Animation</h2>
+        <div class="infoBulle">
+            <p><a href="">Passer la souris!<span>Salut je suis un popup</span></a></p>
+            <p><a href="">Ici aussi!<span>Salut je suis un autre popup</span></a></p>
+            <p><a href="">Une fois encore!<span>Salut je suis un popup</span></a></p>
+        </div>
+        </section>
+    </main>

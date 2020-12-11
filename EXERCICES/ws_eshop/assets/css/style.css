@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing positionné à "border-box" permet de garder tout le temps la même taille extérieure du bloc même si on ajoute du padding et/ou des bordures */
+    /* si on ne spécifie rien, par défaut box-sizing est positionné à "content-box". */
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+p,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'sans serif';
+}
+header{
+    margin: 0 auto;
+}
+
+.infos{
+    background-color:#555;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;/* espacement pour aérer le texte */
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+      
+}
+.logo{
+    background-color: rgb(250, 249, 249);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.logo_1{
+    flex-grow: 2;
+    margin-left: 100px;
+}
+.devis_conseil,.compte_panier{
+    width: 20%;
+}
+.devis_conseil{
+    margin-left: 400px;
+}
+.devis,.conseil,.compte,.panier{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+.conseil,.panier{
+    margin-top: 10px;
+}
+.dim_panier{
+    width: 20%;
+} 
+.logo p{
+    font-style: italic;
+}  
+.text_gras{
+    font-weight: bold;
+}
+.nav_bar{
+    background-color: rgb(250, 249, 249);
+}
+nav ul{
+    display: flex;
+    border: 2px solid lightgray;
+      
+}
+nav li{
+        /*  annulation des styles par défaut de la liste pour obtenir des liens alignés sans puce de liste.*/
+        /*display: inline;*/
+        list-style: none;
+        width: 8%;
+        text-align: center;
+        padding: 5px;
+    }
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;/* suppression des soulignements*/ 
+}
+
+.slider{
+    display: flex;
+    justify-content: space-evenly;      
+}
+.slider img{
+    width: 100%;
+}
+.image{
+    /*width: 200px;*/
+    height: 200px;
+}
+.taille{
+    width: 10px;
+    height: 10px;
+    color: #E53F6F;
+}
+.sols{
+    background-color: #E53F6F;
+}
+.pub{
+    background-color: rgba(74, 74, 74, 0.6);
+    color: white;  
+    padding: 5px;
+    opacity: 0.5;
+    position: relative;
+    bottom: 30px; 
+}
+
+.sols p{
+    background-color: #E53F6F;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+.sols img{
+    overflow: hidden;
+}
+.espace{
+    padding: 10px
+}
+.modalite{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.modalite_1,.modalite_2,.modalite_3,.modalite_4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalite p{
+    text-transform: uppercase;
+    color: gray;
+    font-size: small;
+}
+.text_pink{
+    color: #E53F6F;
+    font-weight: bold;
+    text-align: center;
+}
+.cadre{
+    width: 140px;
+    height: 40px;
+    background-color:#E53F6F;
+    vertical-align: center;
+    text-align: center;
+}
+.cadre p{
+    color: white;
+    padding-top: 8px;
+}
+.nos_produits{
+    width: 1200px;
+}
+.nos_produits_1,.nos_produits_2{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    /*margin: 0 auto;*/
+    margin: 15px;
+}
+.nos_produits div{
+
+}
+.nos_produits img{
+    width: 70%;
+}
+.nos_produits span{
+    color:white;
+    font-weight: bold;
+}
+.bkg_black{
+    background-color: black;
+}
+.bkg_pink{
+    background-color:  #E53F6F;
+}
+.bkg_gray{
+    background-color:  gray;
+}
+.carte{
+    display: flex;
+}
+.nouveaute{
+    background-image: url("../img/nouveauté.png");
+}
+.promo{
+    background-image: url("../img/promo.png");    
+}
+.livraison{
+    background-image: url("../img/livraison.png");
+}    
+footer{
+    width: 1300px;
+    background-color: rgb(92, 84, 84);
+    color: white;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.informations{
+    display: flex;
+}
+footer div{
+    width: 33%;
+    padding: 15px;
+}
+footer h4{
+  text-transform: uppercase; 
+}
+
+.text_italic{
+    font-style: italic;
+    color: #E53F6F;
+    text-align: center;
+}
+   
