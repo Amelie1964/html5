@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing positionné à "border-box" permet de garder tout le temps la même taille extérieure du bloc même si on ajoute du padding et/ou des bordures */
+    /* si on ne spécifie rien, par défaut box-sizing est positionné à "content-box". */
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+p,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0 auto;
+    background-color: white;
+    font-family: 'sans serif';
+}
+header{
+    margin: 0 auto;
+    width: 100%;
+}
+.infos{
+    background-color:#555;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;/* espacement pour aérer le texte */
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;  
+}
+.logo{
+    background-color: rgb(250, 249, 249);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.logo_slogan{
+    flex-grow: 2;
+    margin-left: 15px;
+}
+.devis_conseil,.compte_panier{
+    width: 20%;
+}
+.devis,.conseil,.compte,.panier{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+.conseil,.panier{
+    margin-top: 10px;
+}
+.dim_panier{
+    width: 20%;
+} 
+.logo p{
+    font-style: italic;
+}  
+.text_gras{
+    font-weight: bold;
+}
+.nav_bar{
+    background-color: rgb(250, 249, 249);
+    width: 100%
+}
+nav ul{
+    display: flex;
+    border: 2px solid lightgray;
+      
+}
+nav li{
+        /*  annulation des styles par défaut de la liste pour obtenir des liens alignés sans puce de liste.*/
+        /*display: inline;*/
+        list-style: none;
+        width: 8%;
+        text-align: center;
+        padding: 5px;
+    }
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;/* suppression des soulignements*/   
+}
+.search{/*décalage de la loupe*/
+    margin-left: -65px;
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+.slider{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.pub1{
+    background-color: rgba(74, 74, 74, 0.6);
+    color: white;  
+    padding: 5px;
+    opacity: 0.5;
+    position: relative;
+    width: 779px;
+    bottom: 50px; 
+   
+}
+.pub1 span{
+    color: white;
+    padding: 5px 10px auto;
+}
+.decalage_gauche{
+    margin-left: 180px;
+}
+.light_gray{
+    color: lightgray;
+    border: 1px solid white;
+}
+.gray{
+    color: gray;
+    border: 1px solid white;
+}
+.carrelages,.parquets{
+    margin-left: 15px;
+    margin-bottom: 15px;
+    height: 216px;
+    overflow: hidden;
+}
+.pub2{
+    background-color:  #E53F6F;;
+    color: white;  
+    padding: 5px;
+    position: relative;
+    width: 400px;
+    bottom: 216px; 
+}
+.salon p{
+    color: white;   
+}
+
+.sols p{
+    color: white;
+    text-align: center;
+}
+.espace{
+    margin-top: 15px;
+}
+.modalite{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.modalite_1,.modalite_2,.modalite_3,.modalite_4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalite p{
+    text-transform: uppercase;
+    color: gray;
+    font-size: small;
+}
+.text_pink{
+    color: #E53F6F;
+    font-weight: bold;
+}
+.nos_produits{
+    width: 1200px;
+}
+.titre1{
+    width: 120px;
+    height: 30px;
+    background-color: #E53F6F;
+    color: white;
+    margin-left: 15px;
+}
+.titre1 p{
+    padding-left: 20px;
+    padding-top: 5px ;  
+}
+.nos_produits_1,.nos_produits_2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.nos_produits img{
+    width: 70%;
+}
+.limite{
+    height: 180px;
+    margin-bottom: 50px;
+    /*overflow: hidden;*/
+}
+.shift{
+    position: relative;
+    bottom: 120px;
+    z-index: 8;
+}
+
+.nos_produits span{
+    color:white;
+    font-weight: bold;
+}
+.bkg_black{
+    background-color: black;
+    width: 140px;
+}
+.bkg_pink{
+    background-color:  #E53F6F;
+    width: 140px;
+}
+.bkg_gray{
+    background-color:  gray;
+    width: 280px;
+}
+.carte{
+    display: flex;
+}
+.nouveaute{
+    background-image: url(../img/carrelage1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.promo{
+    background-image: url(../img/carrelage2.jpg);
+}
+.livraison{
+    background-image: url(../img/carrelage11.jpg);
+}
+footer{
+    width: 1200px;
+    background-color: rgb(92, 84, 84);
+    color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.informations{
+    display: flex;
+}
+footer div{
+    width: 33%;
+    padding: 15px;
+}
+.titre2{
+    position: relative;
+    right: 15px;
+    bottom: 30px;
+}
+footer .titre2 p{
+    width: 120px;
+    height: 30px;
+    padding-left: 30px;
+    padding-top: 5px ;
+    background-color: #E53F6F;
+    color: white;
+    text-transform: uppercase; 
+}
+.bold{
+    font-weight: bold;
+    line-height: 25px;
+}
+.text_italic{
+    font-style: italic;
+    color: #E53F6F;
+    text-align: center;
+}
+.adress,.phone,.mail{
+    width: 330px;
+    display: flex;
+    justify-content: space space-between;
+}
+.hour,.about{/*zone "horaire" et zone "qui sommes-nous"*/
+    display: flex;
+    justify-content: space space-between;
+    margin-top: 12px; 
+}
+.icone_adress,.icone_phone,.icone_mail,.icone_hour,.icone_about{/*icônes issues de sprites */
+    background: url("../img/sprites.png");/*l'image composite sprites est mise en background dans un conteneur dont les dimensions sont celles de chaque petite icône*/
+    background-repeat: no-repeat;
+    width: 39px;/*largeur de chaque icône*/
+    height: 34px;/*hauteur de chaque icône*/
+}
+.hour{
+    border-left: 1px solid gray;/*trait vertical de séparation*/
+    border-right: 1px solid gray;/*trait vertical de séparation*/
+}
+.icone_adress{
+    background-position: 0px -102px; /*coordonnées du décalage de l'image sprites pour que seule l'icône "adresse" apparaisse*/
+}
+.icone_phone{
+    background-position: 0px -139px; /*coordonnées du décalage de l'image sprites pour que seule l'icône "téléphone" apparaisse*/
+}
+.icone_mail{
+    background-position: 0px 0px;/*coordonnées du décalage de l'image sprites pour que seule l'icône "enveloppe" apparaisse*/
+}  
+.icone_hour{
+    background-position: -3px -34px;/*coordonnées du décalage de l'image sprites pour que seule l'icône "horloge" apparaisse*/
+} 
+.icone_about{
+    background-position: -3px -72px;/*coordonnées du décalage de l'image sprite pour que seule l'icône "clients" apparaisse*/
+}
+.contact span, .hour span,.about span{
+    margin-left: 15px;
+}

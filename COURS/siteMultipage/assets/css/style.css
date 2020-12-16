@@ -229,7 +229,7 @@ text-shadow: 1px 1px 1px gray;/* créer un shadow sur le texte*/
 }
 .picture2 img {
     transition: ease-in-out 1.5s
-        /* pour visualiser l'effet dans les deux sens, on pet le temps de transition sur l'image et non pas dans le hover */
+        /* pour visualiser l'effet dans les deux sens, on met le temps de transition sur l'image et non pas dans le hover */
 }
 
 .picture2 img:hover {
@@ -328,7 +328,7 @@ text-shadow: 1px 1px 1px gray;/* créer un shadow sur le texte*/
 .infoBulle a span::before {
     content: "";
     /**/
-    /*ces bordures qui vont géneres un triangles*/
+    /*ces bordures vont générer un triangle*/
     border-bottom: 10px solid black;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -342,7 +342,97 @@ text-shadow: 1px 1px 1px gray;/* créer un shadow sur le texte*/
     transition: 1s;
 }
 
+.imgeffets {
+    width: 250px;
+    margin: 43px auto;
 
+}
+
+.imgeffets img {
+    width: 100%;
+    transition: 0.8s cubic-bezier(0, 3, .4, 1);
+    z-index: 1;
+    position: relative;
+}
+
+.zone_1,.zone_2 {
+    display: flex;
+}
+
+.zone_1 div:first-child,.zone_2 div:first-child {
+    margin-right: 10px;
+}
+
+.zone_1 {
+    margin-bottom: 6px;
+}
+
+.imgeffets img:hover {
+    position: relative;
+    transform: scale(1.5);
+    /*scale(X,Y)*/
+    z-index: 2;
+    box-shadow: 0 0 10px #000;
+    /*creer un effet flou autour du bloc*/
+
+}
+
+.imgeffets:hover img:not(:hover) {
+    /*je selectionne img qui n'ont pas de pseudo element hover lorsque je passe la souris au dessus de tout le bloc imgeffets*/
+    filter: grayscale(1) blur(5px)
+        /*grayscale() mettre l'element en niveau de gris, blur() permet de faire l'effet sur l'image*/
+}
+
+
+/********************Css pour la partie multimedia*****************************/
+.videoFond video {
+    width: 100%;
+}
+
+.videoFond p {
+    font-size: 17px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 500px;
+    position: absolute;
+    padding: 30px;
+    top: calc(50% - 110px);
+    left: calc(50% - 250px);
+}
+
+.videoFond {
+    position: relative;
+}
+
+.v_iframe {
+    justify-content: center;
+    display: flex;
+
+}
+
+/********************css pour formulaire*********************/
+form {
+    background-color: #2c3e50;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #fff;
+}
+
+form label {
+    display: inline-block;
+    width: 149px;
+}
+
+form p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+label[for="orange"],
+label[for="fraise"],
+label[for="poire"] {/*Pour les labels dont l'attribut "for" vaut orange, fraise et poire*/
+    width: 50px;
+}
 
 
 

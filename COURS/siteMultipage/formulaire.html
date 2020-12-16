@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--Permet de définir le langage utilisé et la langue -->
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Reliez le fichier html au fichier CSS(Cascading Style Sheets)-->
+     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+     <!--appel de la bibiliothèque font awsome-->
+     <script src="https://kit.fontawesome.com/5194382582.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+     <!--Titre du site apparaissant  par exemple sur une recherche google-->
+    <title>Mon premier site Multipage</title>
+    <!--Description sous le titre dans la recherche google, Les moteurs de recherches s'en servent un peu comme des mots clefs pour les recherchers-->
+    <meta name="description" content="Mon premier site html-css multipage">
+​
+</head>
+<body>
+    <header><!--l'enete du site, qui peut contenir un logo,slogan,banière  nav ...... -->
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="">
+        </div>
+        <div class="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+        <div class="social">
+        <!-- target="_Blank" permet d'ouvrir un lien dans un nouveau onglet -->
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><!--pour creer un lien sur des icons font awsome il faut les déplacer a l'interieur de balise a--> 
+            <a href="https://www.facebook.com" target="_blank" ><i class="fab fa-facebook-square"></i></a>
+​
+        </div>
+​
+    </header>
+    <!--barre de navigation-->
+    <nav>
+        <!--ul>li*12>a-->
+        <ul class="nav_bar">
+            <li><a href="index.html">Structure</a></li><!--index.html c'est la page structure-->
+            <li><a href="texte.html">Texte</a></li>
+            <li><a href="slecteur.html">Selecteur</a></li>
+            <li ><a href="image.html">Image</a></li><!--le lien vers la page image.html-->
+            <li ><a href="position.html">Position</a></li>
+            <li><a href="zoning.html">Zoning</a></li>
+            <li><a href="tableau.html">Tableau</a></li>
+            <li><a href="liste.html">Liste</a></li>
+            <li><a href="lien.html">Lien & menu</a></li>
+            <li class="active"><a href="">Formulaire</a></li>
+            <li  ><a href="multimedia.html">Multimedia</a></li>
+            <li ><a href="animation.html">Animation</a></li>
+        </ul>
+​
+    </nav>
+    <main>
+​<form method="post" action=""><!--Début de formulaire-->
+     <fieldset>
+         <legend>Formulaire</legend>
+        <p>
+         <label for="pseudo">Pseudo*</label placeholder="votre mot de passe">
+        <!--label permet permet de creer une etiquette, c'est le texte qui va s'afficher avant le champ-->
+        <input id="pseudo" type="text" name="pseudo" required>
+        </p>
+        <p>
+        <label for="prenom">Prénom</label>
+        <!--label permet permet de creer une etiquette, c'est le texte qui va s'afficher avant le champ-->
+        <input id="prenom" type="text" name="prenom">
+         <p>
+           <label for="password">Mot de passe</label>
+        <input type="password" name="mot_de_passe" > 
+        <!--Le type "password" permet de mettre des étoiles dans le champ réservé au password pendant qu'on en fait la saisie-->
+        <!--placeholder est une accessibilité web qui permet de donner une information supplémentaire et elle est affichée dans le champ vide.--> 
+         </p>
+         <p>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="abc@exemple.com" required>
+           </p> 
+           <p>
+        <label for="fichier">CV</label>
+        <input id="fichier" type="file" name="fichier" required>
+        <!--le type file permet de joindre des fichiers-->
+        </p> 
+         <p>
+            <label for="fruits">Quels sont vos fruits préférés?</label><br>
+            <input type="checkbox" name="fruits" value="Orange" checked>Orange 
+            <input type="checkbox" name="fruits" value="Fraise">Fraise 
+            <input type="checkbox" name="fruits" value="Poire">Poire <br>
+            <!--le type checkbox permet de créer des cases à cocher-->
+            <!--si on met l'attribut "checked", cela permet de cocher un élément par défaut-->
+            </p>
+             <p>
+         <label for="code">Code postal</label>
+         <input id="code" maxlength="5" pattern="[0-9](5)" type="text" name="code">
+         <!--maxlength permet de limiter la longueur du code postal à 5 caractères-->
+         <!--pattern permet d'indiquer que chacun des 5 chiffres saisis doit être compris entre 0 et 9-->
+         </p>
+         <p>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="40" rows="10"></textarea>
+            </p>  
+         <p>
+                     <!--création des deux boutons de validation-->
+                <input class="sauve" type="submit" name="envoyer" value="Envoyer">
+                <input class="sauve" type="reset" name="annuler" value="Annuler"/>
+                 
+                </p>          
+     </fieldset>
+</form>
+    </main>
+    <footer>
+​
+    </footer>
+</body>
+</html>    
